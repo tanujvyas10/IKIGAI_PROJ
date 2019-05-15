@@ -1,12 +1,10 @@
 var express= require("express")
 var app=express();
-
+var port=process.env.PORT || 8080;
 var bodyParser=require("body-parser")
 var methodOverride=require("method-override");
 var mongoose=require("mongoose")
-var passport=require("passport"),
-LocalStrategy =require("passport-local"),
-passportLocalMongoose=require("passport-local-mongoose");
+
 app.set("view engine","ejs")
 app.use(methodOverride("_method"));
 
@@ -182,6 +180,6 @@ app.get("/person/:id/delete_verify",(req,res)=>{
 
 
 
-app.listen("3000",function(){
+app.listen(port,function(){
     console.log("started...")
 })

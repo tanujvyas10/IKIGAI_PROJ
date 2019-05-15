@@ -1,0 +1,27 @@
+<% include ../partials/header %>
+<style>
+body{
+  background-color:rgb(219, 218, 218);
+}
+</style>
+
+  <div class="ui main text container segment">
+      <a href="/"><button id="goto" class="ui inverted blue button">Go to home page</button></a>
+    <div class="ui huge header">Please answer the following questions !!</div>
+    <form class="ui form" action="/ikigai_inputData" method="POST">
+       <div class="field"><label>Your Name</label> <input type="text"  name ="name" placeholder="Name"></div>
+      
+       <div class="field"><label>What do you love doing ?</label>  <textarea name="love" placeholder="Write here..."></textarea></div>
+        <div class="field"><label>What are you good at ?</label>  <textarea name="good" placeholder="Write here..."></textarea></div>
+        <div class="field"><label>For what you want to get paid for ?</label>  <textarea name="paid" placeholder="Write here..."></textarea></div>
+        <div class="field"><label>What do you think the world needs the most right now ?</label>  <textarea name="need" placeholder="Write here..."></textarea></div>
+
+        <div class="field"><label>Enter your secret key(To allow you to edit or delete you IKIGAI key in future)</label> <input type="text"  name ="secretKey" placeholder="Name"></div>
+
+
+        <!--- <button class="ui green basic button">POST:)</button> </form>-->
+       <button class="ui inverted green button">Submit :)</button>
+     
+    </div>
+<% include ../partials/footer %>
+

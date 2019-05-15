@@ -1,0 +1,26 @@
+<%include ../partials/header %>
+
+<div class="show_head">
+
+        <h1> hey <%= data.name %>!! ,Here is our IKIGAI map </h1>
+
+</div>
+
+<div id="wrapper"> 
+     
+
+<div class="pass_ic">PASSION</div>
+<div class="miss_ic">MISSION</div>
+<div class="voc_ic">VOCATION</div>
+<div class="pro_ic">PROFESSION</div>
+<div id="first" class="content1"><%=data.love %></div>
+<div id="second" class="content2"><%=data.need %></div>
+<div id="third" class="content3"><%=data.paid %></div>
+<div id="fourth" class="content4"><%=data.good %></div>
+
+</div>
+
+<a href="/"><button id="goto" class="ui inverted blue button">Go to home page</button></a>
+
+
+<%include ../partials/footer %>

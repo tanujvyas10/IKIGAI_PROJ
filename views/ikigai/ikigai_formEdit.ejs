@@ -1,0 +1,17 @@
+<% include ../partials/header %>
+
+
+  <div class="ui main text container segment">
+    <div class="ui huge header">Please answer the following questions !!</div>
+    <form class="ui form" action="/person/<%=data._id%>?_method=PUT" method="POST">
+      <div class="field"><label>Your Name</label> <input type="text"  name ="data[name]" value="<%= data.name%>"></div>
+        <div class="field"><label>What do you love doing ?</label>  <textarea name="data[love]" value=""><%= data.love%></textarea></div>
+        <div class="field"><label>What are you good at ?</label>  <textarea name="data[good]" value=""><%= data.good%></textarea></div>
+        <div class="field"><label>For what you want to get paid for ?</label>  <textarea name="data[paid]" value=""><%= data.paid%></textarea></div>
+        <div class="field"><label>What do you think the world needs the most right now ?</label>  <textarea name="data[need]" value=""><%= data.need%></textarea></div>
+
+
+       <button class="ui inverted green button">Submit :)</button>
+    </div>
+<% include ../partials/footer %>
+

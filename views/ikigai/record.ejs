@@ -1,0 +1,41 @@
+<%include ../partials/header %>
+
+
+
+
+<h1 id="head-">IKIGAI Dashboad</h1>
+
+
+<table style="width:100%">
+  <tr>
+    <th colspan="2"> People found purpose in life</th>
+    <th colspan="2">Edit the details</th>
+    <th colspan="2">Delete the details</th>
+    
+  </tr>
+  <%data.forEach(function(el){%>
+
+                
+                <tr>
+                                <td colspan="3">   <a href="/person/<%=el._id%>/detail"> <h2><%=el.name%></h2></a> </td>
+                              <td> <a href="/person/<%=el._id%>/edit_verify"><button class="ui inverted primary button">Edit</button></a>
+
+                                <td colspan="3">
+                                         <a href="/person/<%=el._id%>/delete_verify">  <button class="ui inverted red button">DELETE :(</button>    </a>  
+                                        
+                              </td>  
+                          
+                                 
+                </tr>
+                <% }) %>
+              </table>
+    
+  
+<button  class="massive ui button" class="ui active button">
+        <i class="user icon"></i>
+        <a href="/">Go to home page</a>
+      </button>
+      
+   
+
+<%include ../partials/footer %>

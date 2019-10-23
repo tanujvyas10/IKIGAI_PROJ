@@ -121,8 +121,7 @@ app.delete("/person/:id/delete",(req,res)=>{
 /***************+++++CREATE THE IKIGAI+++++********** */
 app.post("/ikigai_inputData",function(req,res){
     
-    // console.log("the snd data")
-    // console.log(req.body);
+   
   
     var name=req.body.name;
   var love=req.body.love;

@@ -1,4 +1,4 @@
-# ikigai_proj
+# The ikigai_proj
 ikigai is a japanese technique to know your purpose in life
 ![i1](https://user-images.githubusercontent.com/48439116/57755865-946e9280-770f-11e9-82bb-645d63d0ff91.jpeg)
 ![i2](https://user-images.githubusercontent.com/48439116/57755876-99cbdd00-770f-11e9-93ed-839a2856178b.jpeg)
